@@ -1,0 +1,48 @@
+// COLORS
+$color-brown-brand: #B57E40;
+$color-brown-dark: #885F30;
+$color-brown-cream: #DABA95;
+$color-brown-light: #F0E0D1;
+$color-black: #231F1A;
+$color-grey-dark: #433E37;
+$color-grey-cream: #635C54;
+$color-grey-light: #ABA49C;
+$color-grey-medium: #CDC7C1;
+$color-grey-border: #E9E6E2;
+$color-white-cream: #FAF5F0;
+$color-background: #FAFAF9;
+$color-white: #fff;
+
+$color-yellow: #F0C519;
+
+// GRID
+$grid-width: 144rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+//FONT SIZE
+$heading-1-fs: 4.8rem;
+$heading-2-fs: 3.6rem;
+$heading-3-fs: 2.4rem;
+$text-1-fs: 1.8rem;
+$text-fs: 1.6rem;
+$default-font-size: 1.4rem; // 1 rem = 10px
+
+// BORDER
+$border: 1px solid $color-grey-medium;
+$border-focus: 1px solid $color-brown-brand;
+
+// BORDER RADIUS
+$big-border-radius: 1.2rem;
+$medium-border-radius: .8rem;
+$default-border-radius: .6rem;
+
+// SHADOWS
+$shadow-extra-light: 0 .1rem .6rem rgba($color-grey-cream, .16);
+$shadow-light: 0 .4rem 1rem rgba($color-grey-cream, .16);
+$shadow-medium: 0 1.2rem 2rem rgba($color-grey-cream, .24);
+$shadow-big: 0 0rem 12rem rgba($color-grey-cream, .12);
+
+
+// TRANSITIONS
+$default-transition: all .2s;

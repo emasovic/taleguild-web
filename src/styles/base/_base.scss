@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1 rem = 10 px
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1024px;
+    background-color: #FEFCFB;
+
+    @include respond(tab-land) {
+        box-sizing: none;
+        margin: 0 auto;
+    }
+}

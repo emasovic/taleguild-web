@@ -1,0 +1,20 @@
+.footer {
+    width: 100%;
+    text-align: center;
+    border-radius: $big-border-radius;
+
+    &__logo {
+        height: 3.2rem;
+    }
+
+    &__nav-box {
+        margin: 1.6rem;
+    }
+
+    &__copyright {
+        font-size: $default-font-size;
+        font-family: "Lato";
+        font-weight: 400;
+        color: $color-grey-cream;
+    }
+}

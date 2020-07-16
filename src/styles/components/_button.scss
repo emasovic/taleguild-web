@@ -1,0 +1,131 @@
+.btn-text {
+	&:link,
+	&:visited {
+		color: $color-grey-cream;
+		font-size: $default-font-size;
+		border-radius: $default-border-radius;
+		transition: $default-transition;
+		letter-spacing: 0.1rem;
+		text-decoration: none;
+		display: inline-block;
+		margin-left: 1.2rem;
+		padding: 0.8rem 1.6rem;
+	}
+
+	&:hover {
+		background-color: $color-white-cream;
+		color: $color-brown-dark;
+	}
+
+	&:active {
+		background-color: $color-brown-light;
+		transition: all 1s;
+	}
+}
+
+.btn-text-color {
+	&:link,
+	&:visited {
+		color: $color-brown-dark;
+		font-size: $text-fs;
+		font-weight: 700;
+		letter-spacing: 0.1rem;
+		text-decoration: none;
+		display: inline-block;
+	}
+}
+
+.btn-text-cta {
+	svg {
+		margin-right: 6px;
+    }
+
+	&:link,
+	&:visited {
+		background-color: $color-brown-brand;
+		color: $color-white;
+		font-size: $default-font-size;
+		font-weight: 700;
+		letter-spacing: 0.1rem;
+		text-decoration: none;
+		box-shadow: $shadow-light;
+		border-radius: $default-border-radius;
+		transition: $default-transition;
+		display: flex;
+		align-items: center;
+		margin-left: 1.2rem;
+		padding: 0.8rem 1.6rem;
+	}
+
+	&:hover {
+		transform: translateY(-0.4rem);
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+}
+
+.btn-primary {
+	&:link,
+	&:visited {
+		background-color: $color-brown-brand;
+		color: $color-white;
+		font-size: $default-font-size;
+		font-weight: 700;
+		letter-spacing: 0.1rem;
+		text-decoration: none;
+		box-shadow: $shadow-light;
+		border-radius: $default-border-radius;
+		transition: $default-transition;
+		display: inline-block;
+		margin-right: 1.6rem;
+		padding: 1.2rem 2.2rem;
+
+		@include respond(tab-land) {
+			width: 100%;
+			text-align: center;
+			display: block;
+			margin-bottom: 1.6rem;
+		}
+	}
+
+	&:hover {
+		transform: translateY(-0.4rem);
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+}
+
+.btn-secondary {
+	&:link,
+	&:visited {
+		background-color: $color-white;
+		color: $color-brown-dark;
+		font-size: $default-font-size;
+		font-weight: 700;
+		letter-spacing: 0.1rem;
+		text-decoration: none;
+		box-shadow: $shadow-light;
+		border-radius: $default-border-radius;
+		transition: $default-transition;
+		display: inline-block;
+		padding: 1.2rem 2.2rem;
+
+		@include respond(tab-land) {
+			width: 100%;
+			text-align: center;
+			display: block;
+		}
+	}
+
+	&:hover {
+		transform: translateY(-0.4rem);
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+}

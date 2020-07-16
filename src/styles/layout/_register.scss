@@ -1,0 +1,171 @@
+.header-register {
+	display: flex;
+
+	&__logo-box {
+		top: 4rem;
+		margin: 0 auto;
+
+		@include respond(tab-port) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__logo {
+		width: 14rem;
+
+		@include respond(tab-port) {
+			margin: 0 auto;
+		}
+	}
+}
+
+.register {
+	width: 100%;
+	display: flex;
+	margin-top: 6.4rem;
+
+	&__box--content {
+		width: 50%;
+		padding: 6rem;
+
+		@include respond(tab-port) {
+			display: none;
+			padding: 0.1rem;
+		}
+	}
+
+	&__box--form {
+		width: 50%;
+		padding: 4rem;
+		border-radius: $big-border-radius;
+		box-shadow: $shadow-big;
+
+		@include respond(tab-land) {
+			width: 100%;
+		}
+
+		@include respond(phone) {
+			text-align: center;
+			padding: 3.6rem;
+		}
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+
+		@include respond(tab-land) {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	&__input {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__label {
+		color: $color-grey-cream;
+		font-size: $default-font-size;
+		font-weight: 400;
+		letter-spacing: 0.1rem;
+		text-decoration: none;
+		text-align: left;
+	}
+
+	&__inputfield {
+		background-color: $color-white;
+		color: $color-black;
+		font-size: $default-font-size;
+		font-weight: 700;
+		letter-spacing: 0.1rem;
+		text-decoration: none;
+		border: $border;
+		border-radius: $default-border-radius;
+		transition: $default-transition;
+		display: inline-block;
+		padding: 1.2rem 2.2rem;
+		margin-bottom: 2.4rem;
+
+		&:focus {
+			background-color: $color-white;
+			border: $border-focus;
+			box-shadow: 0 0rem 1rem rgba($color-brown-brand, 0.48);
+		}
+	}
+
+	::placeholder {
+		font-family: 'Lato', sans-serif;
+		color: $color-grey-light;
+		font-size: $default-font-size;
+		font-weight: 400;
+	}
+
+	&__checkbox {
+		margin: 1.4rem 1.2rem 1.2rem 0;
+		width: 2rem;
+		height: 2rem;
+		cursor: pointer;
+	}
+
+	&__links {
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
+		font-size: $text-fs;
+		text-decoration: none;
+		color: $color-brown-dark;
+		margin: 0 4px;
+
+		&:hover {
+			color: $color-brown-brand;
+			text-decoration: underline;
+		}
+	}
+
+	&__btn {
+		&:link,
+		&:visited {
+			background-color: $color-brown-brand;
+			color: $color-white;
+			font-size: $default-font-size;
+			font-weight: 700;
+			letter-spacing: 0.1rem;
+			text-decoration: none;
+			text-align: center;
+			box-shadow: $shadow-light;
+			border-radius: $default-border-radius;
+			transition: $default-transition;
+			display: inline-block;
+			padding: 1.2rem 2.2rem;
+			margin-top: 2.4rem;
+
+			@include respond(tab-land) {
+				width: 100%;
+				text-align: center;
+				display: block;
+				margin-bottom: 1.6rem;
+			}
+		}
+
+		&.disabled {
+			pointer-events: none;
+			cursor: not-allowed;
+		}
+
+		&:hover {
+			transform: translateY(-0.4rem);
+		}
+
+		&:active {
+			transform: translateY(0);
+		}
+	}
+
+	@include respond(tab-port) {
+		display: block;
+		text-align: left;
+		height: 100%;
+	}
+}

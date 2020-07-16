@@ -1,0 +1,30 @@
+.list {
+    width: 50%;
+
+    &__item {
+        display: flex;
+    }
+
+    &__img {
+        width: 4.8rem;
+        margin-right: 1.6rem;
+    }
+
+    @include respond(tab-port) {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.small-list {
+    margin-bottom: 2.4rem;
+
+    &__item {
+        display: flex;
+    }
+
+    &__img {
+        width: 3.2rem;
+        margin-right: 1.6rem;
+    }
+}

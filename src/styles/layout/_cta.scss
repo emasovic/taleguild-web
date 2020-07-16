@@ -1,0 +1,25 @@
+.cta {
+    width: 100%;
+    text-align: center;
+    background-color: $color-brown-brand;
+    border-radius: $big-border-radius;
+    padding: 6rem;
+
+    &__heading {
+        font-size: $heading-1-fs;
+        font-family: "Merriweather";
+        font-weight: 800;
+        line-height: 5.2rem;
+        color: $color-white;
+        margin-bottom: 3.6rem;
+    }
+
+    &__text {
+        font-size: $text-1-fs;
+        font-family: "Lato";
+        font-weight: 400;
+        line-height: 2.4rem;
+        color: $color-grey-border;
+        margin-bottom: 3.6rem;
+    }
+}

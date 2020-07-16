@@ -1,0 +1,35 @@
+.card {
+    width: 33.3333%;
+
+    &:not(:last-child) {
+        margin-right: 2.4rem;
+
+        @include respond(tab-port) {
+            margin: 0 auto;
+        }
+    }
+
+    &__content {
+        padding: 2.4rem;
+    }
+
+    &__img {
+        width: 12rem;
+        object-fit: cover;
+
+        @include respond(phone) {
+            //width: 12rem;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+    }
+
+    @include respond(tab-port) {
+        width: 52rem;
+        margin: 0 auto;
+    }
+
+    @include respond(phone) {
+        width: 30rem;
+    }
+}

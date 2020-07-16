@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+
+    &__logo-box {
+        top: 4rem;
+        left: 4rem;
+        width: 20%;
+
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__logo {
+        width: 14rem;
+
+        @include respond(tab-port) {
+            margin: 0 auto;
+        }
+    }
+
+    &__nav-box {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        text-align: right;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+}
