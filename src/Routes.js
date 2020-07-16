@@ -7,6 +7,7 @@ import Home from 'views/Home';
 import SignUp from 'views/SignUp';
 import PrivacyPolicy from 'views/PrivacyPolicy';
 import TermsOfService from 'views/TermsOfService';
+import NotFound from 'views/NotFound';
 // import NotFound from 'NotFound';
 
 const Routes = () => (
@@ -16,8 +17,7 @@ const Routes = () => (
 			<Route exact path={routes.REGISTER} component={SignUp} />
 			<Route exact path={routes.PRIVACY_POLICY} component={PrivacyPolicy} />
 			<Route exact path={routes.TERMS_OF_SERVICE} component={TermsOfService} />
-
-			{/* <Route path="*" component={NotFound} /> */}
+			<Route path="*" component={NotFound} />
 		</Switch>
 	</Router>
 );

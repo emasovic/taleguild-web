@@ -337,10 +337,10 @@ export default function Home() {
 						and suggestions for features. Together we are building our guild of stories.
 					</p>
 					<a
-						href="mailto:ideas@taleguild.com?subject=Your idea"
+						href="mailto:contact@taleguild.com?subject=Your idea"
 						className="btn-text-color"
 					>
-						ideas@taleguild.com
+						contact@taleguild.com
 					</a>
 				</div>
 				<div className="hero__box--img">
