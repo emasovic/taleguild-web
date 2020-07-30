@@ -11,8 +11,8 @@ import featureFeed from 'images/features-feed.png';
 import featureFeedM from 'images/features-feed-m.png';
 import featureSocial from 'images/features-social.png';
 import featureSocialM from 'images/features-social-m.png';
-// import hero from 'images/hero1.jpg';
-import hero2 from 'images/hero2.jpg';
+import hero from 'images/hero2.jpg';
+// import hero2 from 'images/hero-image.png';
 import ideas from 'images/ideas-image.png';
 import nextWork from 'images/next-work.svg';
 import solFanfiction from 'images/sol-fanfiction.png';
@@ -61,9 +61,10 @@ export default function Home() {
 			{/* <!-- HERO --> */}
 			<section className="hero">
 				<div className="hero__box--content">
-					<h1 className="heading-1">Join our guild of writers and essayists.</h1>
+					<h1 className="heading-1">Your place to write and build</h1>
 					<p className="text">
-						Write short stories and essays and share it with the rest of the world.
+						Whether you’re writer, essayist, designer, artist or editor, Taleguild makes
+						it easy to write stories and share it with others.
 					</p>
 					<div className="hero__buttons-box">
 						<Link to={REGISTER} className="btn-primary">
@@ -80,7 +81,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="hero__box--img">
-					<img src={hero2} alt="Hero" className="hero-img" />
+					<img src={hero} alt="Hero" className="hero-img" />
 				</div>
 			</section>
 
@@ -235,7 +236,12 @@ export default function Home() {
 							</li>
 						</ul>
 						<div className="section__buttons-box">
-							<a href={URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
+							<a
+								href={URL}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="btn-primary"
+							>
 								Read stories now
 							</a>
 						</div>
