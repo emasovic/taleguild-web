@@ -9,6 +9,10 @@
 html {
     font-size: 62.5%; // 1 rem = 10 px
     scroll-behavior: smooth;
+
+    @media (max-width: 576px) {
+        font-size: 42%;
+    }
 }
 
 body {
